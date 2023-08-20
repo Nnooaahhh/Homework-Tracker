@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Homework Tracker</h1>
+    </div>
+    
+    <div class="course-section">
+        <h2>Courses</h2>
+        <input type="text" id="courseName" placeholder="Course Name">
+        <button onclick="addCourse()">Add Course</button>
+    </div>
+    
+    <div class="homework-section">
+        <h2>Homework</h2>
+        <select id="courseSelector"></select>
+        <input type="text" id="description" placeholder="Homework Description">
+        <input type="date" id="dueDate">
+        <button onclick="addHomework()">Add Homework</button>
+    </div>
+    
+    <div class="assessments-section">
+        <h2>Assessments</h2>
+        <select id="assessmentCourseSelector"></select>
+        <input type="text" id="assessmentName" placeholder="Assessment Name">
+        <select id="assessmentType">
+            <option value="Test">Test</option>
+            <option value="Quiz">Quiz</option>
+        </select>
+        <button onclick="logAssessment()">Log Assessment</button>
+    </div>
+    
+    <div class="homework-list">
+        <h2>Homework List</h2>
+        <ul id="homeworkItems"></ul>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
